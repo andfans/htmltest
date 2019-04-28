@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+  <title>菜鸟教程（runoob.com）</title>
+</head>
+<body>
+  <h1>HTML表格</h1>
+  <p>
+    每个表格从一个 table 标签开始。 每个表格行从 tr 标签开始。 每个表格的数据从
+    td 标签开始。
+  </p>
+  <h4>一列：</h4>
+  <table border="1">
+    <caption>
+      Monthly savings
+    </caption>
+    <tr>
+      <th>100</th>
+      <th>200</th>
+      <th>300</th>
+    </tr>
+    <tr>
+      <td>200</td>
+      <td>300</td>
+      <td>400</td>
+    </tr>
+  </table>
+
+  <h4>单元格跨两格：</h4>
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th colspan="2">Telephone</th>
+    </tr>
+    <tr>
+      <td>Bill Gates</td>
+      <td>555 777 854</td>
+      <td>555 77 855</td>
+    </tr>
+  </table>
+
+  <h4>单元格跨两列：</h4>
+  <table border="1">
+    <tr>
+      <th>First Name:</th>
+      <td>Bill Gates</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Telephone:</th>
+      <td>555 77 854</td>
+    </tr>
+    <tr>
+      <td>555 77 855</td>
+    </tr>
+  </table>
+
+  <table border="1" cellpadding="10" cellspacing="10">
+    <tr>
+      <td>
+        <p>这是一个段落</p>
+        <p>这是另外一个段落</p>
+      </td>
+      <td>
+        <p>这个单元格包含一个表格</p>
+        <table border="1">
+          <tr>
+            <td>A</td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td>D</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>这是一个单元格包含一个列表</p>
+        <ul>
+          <li>apple</li>
+          <li>banana</li>
+          <li>pineapple</li>
+        </ul>
+      </td>
+      <td>Hello</td>
+    </tr>
+  </table>
+</body>

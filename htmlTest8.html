@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <title>菜鸟教程（RUOON.COM）</title>
+
+  <script>
+    document.createElement("myHero");
+  </script>
+  <style>
+    myHero {
+      display: block;
+      background-color: yellowgreen;
+      padding: 50px;
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <video width="320" height="240" controls>
+    <source src="videos/movie.mp4" type="video/mp4" />
+    你的浏览器不支持 video 标签。
+  </video>
+  <p>我的第一个段落。</p>
+  <myHero>我的第一个新元素</myHero>
+  <canvas id="myCanvas">您的浏览器不支持HTML5 canvas</canvas>
+  <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(0, 0, 80, 100);
+  </script>
+  <audio controls>
+    <source src="audios/horse.ogg" />
+    您的浏览器不支持audio元素。
+  </audio>
+  <embed src="flash/helloworld.swf" type="" />
+</body>

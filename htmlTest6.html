@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+  <title>菜鸟教程（runoob.com）</title>
+</head>
+<body>
+  <h1>表单</h1>
+  <form action="htmlTest5.html" method="get">
+    First name: <input type="text" name="firstname" /><br />
+    Last name: <input type="password" name="password" /><br />
+    <input type="radio" name="sex" value="male" />Male<br />
+    <input type="radio" name="sex" value="female" />Female<br />
+
+    <input type="checkbox" name="vehicle" value="Bike" />I have a bike<br />
+    <input type="checkbox" name="vehicle" value="Car" />I have a car<br />
+    <select name="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat" selected>Fiat</option>
+      <option value="audi">Audi</option> </select
+    ><br />
+    <input type="submit" value="Submit" />
+  </form>
+  <p><b>注意：</b>表单本身是不可见的。一个文本的默认宽度是20字符。</p>
+  <textarea cols="30" rows="10">我是一个文本框</textarea>
+  <form action="">
+    <fieldset>
+      <legend>Personal information:</legend>
+      Name: <input type="text" size="30" /><br />
+      E-mail:
+      <input type="text" size="30" /><br />
+      Date of birth:
+      <input type="text" size="10" />
+    </fieldset>
+  </form>
+  <form method="GET">
+    First name: <input type="text" name="Firstname" value="Mickey" /><br />
+    Last name:
+    <input type="text" name="Lastname" value="Mouse" /><br />
+    <input type="submit" value="提交" />
+  </form>
+  <form action="" method="GET">
+    <input type="checkbox" name="vehicle[]" value="Bike" />I have a bike<br />
+    <input type="checkbox" name="vehicle[]" value="Car" checked="checked" />I
+    have a car<br />
+    <input type="submit" value="提交" />
+  </form>
+  <form action="" method="GET">
+    <input list="browsers" name="browser" />
+    <datalist id="browsers">
+      <option value="Internet Explorer"></option>
+      <option value="Firefox"> </option>
+      <option value="Chrome"> </option>
+      <option value="Opera"> </option>
+      <option value="Safari"> </option>
+    </datalist>
+    <input type="submit" />
+    <input type="reset" value="重置" />
+  </form>
+</body>

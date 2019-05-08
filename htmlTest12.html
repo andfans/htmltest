@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+</head>
+<body>
+  <h1>Canvas</h1>
+  <p>Image to use:</p>
+  <img
+    id="scream"
+    src="images/img_the_scream.jpg"
+    alt="The Sream"
+    width="200"
+    height="277"
+  />
+  <p>Canvas:</p>
+  <canvas
+    id="myCanvas"
+    width="250"
+    height="300"
+    style="border:1px solid #3d3d3d;"
+  ></canvas>
+  <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("scream");
+    img.onload = function() {
+      ctx.drawImage(img, 10, 10);
+    };
+  </script>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="190">
+    <polygon
+      points="100,10 40,180 190,60 10,60 160,180"
+      style="fill:lime;stroke:purple;stroke-width:5;fill-rule: evenodd;"
+    />
+  </svg>
+</body>

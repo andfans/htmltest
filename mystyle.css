@@ -4,3 +4,12 @@ h3 {
 p {
   color: blue;
 }
+header,
+section,
+footer,
+aside,
+nav,
+article,
+figure {
+  display: block;
+}
